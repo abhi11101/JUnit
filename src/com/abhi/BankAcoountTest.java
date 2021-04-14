@@ -9,7 +9,7 @@ class BankAcoountTest {
     @org.junit.jupiter.api.BeforeEach
     public void setup(){
         obj = new BankAcoount("Abhi",1000);
-        System.out.println("Running a test...");
+        System.out.println("Running a testttt ...");
     }
 
     @org.junit.jupiter.api.Test
