@@ -16,7 +16,7 @@ public class BankAcoount {
     }
 
     public double withdraw(double amount){
-        balance+=amount;
+        balance-=amount;
         return balance;
     }
 

@@ -4,38 +4,30 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BankAcoountTest {
 
+    private BankAcoount obj;
+
+    @org.junit.jupiter.api.BeforeEach
+    public void setup(){
+        obj = new BankAcoount("Abhi",1000);
+        System.out.println("Running a test...");
+    }
+
     @org.junit.jupiter.api.Test
     void deposit() {
-        fail("This test has yet to be implemented!!");
+        double balance = obj.deposit(200);
+       assertEquals(1200,balance,0);
     }
 
     @org.junit.jupiter.api.Test
     void withdraw() {
-        fail("This test has yet to be implemented!!");
+        double balance = obj.withdraw(200);
+        assertEquals(800,balance,0);
     }
 
     @org.junit.jupiter.api.Test
-    void getName() {
-        fail("This test has yet to be implemented!!");
+    void getBalance_deposit() {
+        obj.deposit(200);
+        assertEquals(1200,obj.getBalance(),0);
     }
 
-    @org.junit.jupiter.api.Test
-    void setName() {
-        fail("This test has yet to be implemented!!");
-    }
-
-    @org.junit.jupiter.api.Test
-    void getBalance() {
-        fail("This test has yet to be implemented!!");
-    }
-
-    @org.junit.jupiter.api.Test
-    void setBalance() {
-        fail("This test has yet to be implemented!!");
-    }
-
-    @org.junit.jupiter.api.Test
-    void testToString() {
-        fail("This test has yet to be implemented!!");
-    }
 }
